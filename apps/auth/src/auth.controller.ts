@@ -3,10 +3,11 @@ import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './guards/local-auth.guard';
 
 import { UserDocument } from './users/models/user.schema';
-import { CurrentUser } from './curent-user.decorator';
+
 import { Response } from 'express';
 import { MessagePattern, Payload } from '@nestjs/microservices';
 import { JwtAuthGuard } from '@app/common';
+import { CurrentUser } from '@app/common';
 
 @Controller()
 export class AuthController {
